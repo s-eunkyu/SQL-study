@@ -14,10 +14,10 @@
 -- (1) 데이터 검증을 위한 쿼리
 SELECT *
 FROM (SELECT
-      id,
-      catch_date,
-      DATE(DATETIME(catch_datetime, 'Asia/Seoul')) AS catch_datetime_kr_date
-    FROM `basic.trainer_pokemon`)
+        id,
+        catch_date,
+        DATE(DATETIME(catch_datetime, 'Asia/Seoul')) AS catch_datetime_kr_date
+      FROM `basic.trainer_pokemon`)
 WHERE catch_date != catch_datetime_kr_date;
 -- 컬럼의 설명을 꼭 확인하고 sql을 작성해야함
 
