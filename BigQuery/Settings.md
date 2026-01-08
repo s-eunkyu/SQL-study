@@ -26,10 +26,15 @@
   `hp`,
   `id`,
   `kor_name`,
+  `eng_name`,
   `special_attack`,
+  `special_defense`,
+  `speed`,
   `total`,
   `type1`,
-  `type2`
+  `type2`,
+  `generation`,
+  `is_legendary`
 - trainer_pokemon:
   `catch_date`,
   `catch_datetime`,
