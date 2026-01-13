@@ -3,6 +3,7 @@
 
 SELECT
     user_id
+    -- MAX(IF(order_date='2023-05-01', 1, 0)) AS `2023-05-01`
   , IF(SUM(IF(order_date='2023-05-01', amount, 0)) > 0, 1, 0) AS `2023-05-01`
   , IF(SUM(IF(order_date='2023-05-02', amount, 0)) > 0, 1, 0) AS `2023-05-02`
   , IF(SUM(IF(order_date='2023-05-03', amount, 0)) > 0, 1, 0) AS `2023-05-03`
